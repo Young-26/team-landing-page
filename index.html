@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队主页 - Team Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我们的团队</h1>
+            <p class="tagline">一起学习 Git，一起成长</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>这是一个用于学习 Git 协作的练手项目。团队成员可以通过添加自己的信息来练习 Git 操作。</p>
+        </section>
+
+        <section id="team">
+            <h2>团队成员</h2>
+            <div class="team-grid">
+                <!-- 团队成员可以在这里添加自己的卡片 -->
+                <div class="team-member">
+                    <div class="member-avatar">👤</div>
+                    <h3>成员名称</h3>
+                    <p class="member-role">职位/角色</p>
+                    <p class="member-description">简短介绍</p>
+                </div>
+
+                <div class="team-member placeholder">
+                    <div class="member-avatar">➕</div>
+                    <h3>添加你的信息</h3>
+                    <p class="member-description">通过 Git 贡献来添加你的团队成员卡片</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-contribute">
+            <h2>如何贡献</h2>
+            <ol>
+                <li>Fork 这个仓库</li>
+                <li>克隆到本地：<code>git clone [你的仓库地址]</code></li>
+                <li>创建新分支：<code>git checkout -b add-member-[你的名字]</code></li>
+                <li>在 index.html 中添加你的团队成员卡片</li>
+                <li>提交更改：<code>git commit -m "添加团队成员: [你的名字]"</code></li>
+                <li>推送到远程：<code>git push origin add-member-[你的名字]</code></li>
+                <li>创建 Pull Request</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Team Landing Page - Git 学习项目</p>
+        </div>
+    </footer>
+</body>
+</html>
